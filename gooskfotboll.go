@@ -16,7 +16,7 @@ func main() {
 	router := mux.NewRouter().StrictSlash(true)
 	router.HandleFunc("/shop", ShopIndex)
 
-	log.Fatal(http.ListenAndServe(":9000", router))
+	log.Fatal(http.ListenAndServe(":8080", router))
 }
 
 type ShopIndexResponse struct {
